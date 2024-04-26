@@ -1,0 +1,26 @@
+@startuml
+class Vehicle {
+    private int id;
+    private String name;
+    private Coordinates coordinates;
+    private java.time.ZonedDateTime creationDate;
+    private int enginePower;
+    private int numberOfWheels;
+    private Double fuelConsumption;
+    private FuelType fuelType;
+}
+
+class Coordinates {
+    private int x;
+    private double y;
+}
+
+enum FuelType {
+    ELECTRICITY,
+    DIESEL,
+    ALCOHOL,
+    PLASMA;
+}
+
+
+@enduml
